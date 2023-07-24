@@ -2,7 +2,7 @@
 <html>
 <head>
   <style>
-    body{display: flex; background-color: #e9e9e9; justify-content: center; }
+    body{display: flex; background-color: green; justify-content: center; }
     div.contents{display: flex; flex-direction: column; justify-content: center; align-content: center; width: 840px;}
     h1.title{display: flex; flex-direction: row; justify-content: center; padding: 15px; margin-bottom: 4px; background-color: white; font-size: larger;}
     div.nav{display: flex; flex-direction: row; align-items: center; height: 35px; margin-bottom: 10px;  background-color: white;text-decoration-line: none;}
@@ -27,6 +27,11 @@
     input#real_answer:focus~ div.answer_container{display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 8px; background-color: whitesmoke;}
     p.answer_is{color: royalblue;}
     img#profile{width: 100px; border-radius: 100px; border: 2px solid black; margin-bottom: 10px;}
+
+    #goddanm
+    {
+      font-size:0.5px;
+    }
 
   </style>
   <title>나만의 웹페이지</title>
@@ -57,6 +62,7 @@
     <div class="quiz_container">
       <div class="question">
         <!-- p태그를 이용하여 첫 번째 문제를 내주세요 -->
+        나의 키는 몇cm일까요
       </div>
       <div class="option">
         <div id="answer_option">
@@ -65,18 +71,23 @@
               <img id="profile" src="profile.jpg" width="10%">
               <div id="q1_radio">
                 <!-- input 타입 중 radio를 이용하여 보기1을 만들어주세요 -->
+                183<input type ="radio"name="num1">
               </div>
           </div>
           <div id="q1_answer">
               <!-- 이미지 넣기를 이용하여 보기 이미지2를 넣어주세요 (id는 "profile") -->
+              <img id="profile" src="profile2.jpg" width="10%">
               <div id="q1_radio">
                 <!-- input 타입 중 radio를 이용하여 보기2를 만들어주세요 -->
+                169<input type ="radio"name="num2">
               </div>
           </div>
           <div id="q1_answer">
               <!-- 이미지 넣기를 이용하여 보기 이미지3을 넣어주세요 (id는 "profile") -->
+              <img id="profile" src="profile3.jpg" width="10%">
               <div id="q1_radio">
                 <!-- input 타입 중 radio를 이용하여 보기3을 만들어주세요 -->
+                176<input type ="radio"name="num3">
               </div>
           </div>
         </div>
@@ -87,6 +98,7 @@
         <div class="answer_container">
           <p class="answer_is"><strong>정답은 바로!!</strong></p>
           <!-- p태그를 이용하여 첫 번째 문제의 정답을 써주세요 -->
+          <p>183</p><p id="goddanm">-14</p>
         </div>
       </div>
     </div>
@@ -97,9 +109,11 @@
     <div class="quiz_container">
       <div class="question">
         <!-- p태그를 이용하여 두 번째 문제를 내주세요 -->
+        <p>123-23=?</p>
       </div>
       <div class="option">
         <!-- input 타입 중 text를 이용하여 입력창을 만들어주세요 (placeholder 사용해보기) -->
+        <input type="text"name="v1">
       </div>
 
       <div class="answer">
@@ -107,6 +121,7 @@
         <div class="answer_container">
           <p class="answer_is"><strong>정답은 바로!!</strong></p>
           <!-- p태그를 이용하여 두 번째 문제의 정답을 써주세요 -->
+          <p>100</p>
         </div>
       </div>
     </div>
@@ -117,9 +132,13 @@
     <div class="quiz_container">
       <div class="question">
         <!-- p태그를 이용하여 세 번째 문제를 내주세요 -->
+        <p>정답 안의 숫자는?</p>
       </div>
       <div class="option">
         <!-- input 타입 중 checkbox를 이용하여 3개 이상의 보기를 만들어주세요 -->
+        43<input type="checkbox"name="arr">
+        762<input type="checkbox"name="arr2">
+        453<input type="checkbox"name="arr3">
       </div>
 
       <div class="answer">
@@ -127,6 +146,7 @@
         <div class="answer_container">
           <p class="answer_is"><strong>정답은 바로!!</strong></p>
           <!-- p태그를 이용하여 세 번째 문제의 정답을 써주세요 -->
+          <p>762</p>
         </div>
       </div>
     </div>
