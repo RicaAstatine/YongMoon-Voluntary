@@ -43,13 +43,13 @@ function enterkey() {
          * 미로 사이즈가 짝수면 "Please enter an odd number." 라는 경고 메시지 생성
          * 미로 사이즈가 홀수면 미로의 사이즈를 타일의 갯수 변수에 저장, 게임 시작 함수 호출
          */     
-    	if(mazeSize%2==0)
+    	if(sizeInput%2==0)
 		{
 			alert("Please enter an odd number.");
 		}
-		else if(mazeSize%2==1)
+		else if(sizeInput%2==1)
 		{
-			tc=mazeSize;
+			tc=sizeInput;
 		}
 		initialize();
     }
@@ -113,7 +113,7 @@ function keyPush(evt){
 			xv = -1; 
 			break;
 		case 38:
-			yv=1;
+			yv=-1;
 			xv=0;
 			break;
 		case 39:
@@ -121,7 +121,7 @@ function keyPush(evt){
 			yv=0;
 			break;
 		case 40:
-			yv=-1;
+			yv=1;
 			xv=0;
 			break;
 
